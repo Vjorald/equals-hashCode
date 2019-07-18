@@ -1,0 +1,18 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+		Kunde kd1 = new Kunde("Hugo Meier", "Hauptstr: 12, 40880 RATINGEN");
+		
+		Konto kto1 = new Konto(4711, 10000.);
+		kto1.setKunde(kd1);
+		
+        Konto kto2 = new Konto(4811, 0.);
+        
+        System.out.println("Objekt kto1 gleicht Objekt kto2:" +kto1.equals(kto2));
+        System.out.println("Hashcode von Objekt kto1: " +kto1.hashCode());
+        System.out.println("Hashcode von Objekt kto2: " +kto2.hashCode());
+	}
+
+}
